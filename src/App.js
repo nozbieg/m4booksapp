@@ -113,6 +113,8 @@ class App extends Component
     });
     return (
       <div className="App container">
+        <Button color="primary">Books</Button>
+        <Button color="primary" className="ml-2">Customers</Button>
         <h1>Books App</h1>
         <Button className="my-3" color="primary" onClick={this.toggleNewBookModal.bind(this)}>Add a new book</Button>
         <Modal isOpen={this.state.newBookModal} toggle={this.toggleNewBookModal.bind(this)}>
